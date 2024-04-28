@@ -1,5 +1,6 @@
 import React from "react";
 import "./weather.css";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function Weather() {
   let weatherData = {
@@ -41,37 +42,74 @@ export default function Weather() {
               {weatherData.currentTemperature}
             </span>{" "}
             <span className="current-temperature-emoji">
-              {weatherData.currentEmoji}
+              <ReactAnimatedWeather
+                icon="RAIN"
+                color="gray"
+                size={34}
+                animate={true}
+              />
             </span>
           </div>
         </div>
         <ul className="forecast d-flex justify-content-between">
           <li className="forecast-weather">
-            Sat☀
-            <br />
+            Sat{" "}
+            <span>
+              <ReactAnimatedWeather
+                icon="CLEAR_DAY"
+                color="goldenrod"
+                size={24}
+                animate={true}
+              />
+              <br />{" "}
+            </span>
             <span className="temp-high">15°</span>
-            <span className="temp-low">9°</span>
-          </li>
+            <span className="temp-low">9°</span>{" "}
+          </li>{" "}
           <li className="forecast-weather">
-            Sun☁
+            Sun{" "}
+            <ReactAnimatedWeather
+              icon="CLOUDY"
+              color="white"
+              size={24}
+              animate={true}
+            />
             <br />
             <span className="temp-high">15°</span>
             <span className="temp-low">10°</span>
           </li>
           <li className="forecast-weather">
-            Mon☁
+            Mon{" "}
+            <ReactAnimatedWeather
+              icon="FOG"
+              color="white"
+              size={24}
+              animate={true}
+            />
             <br />
             <span className="temp-high">15°</span>
             <span className="temp-low">10°</span>
           </li>
           <li className="forecast-weather">
-            Tue☁
+            Tue{" "}
+            <ReactAnimatedWeather
+              icon="RAIN"
+              color="white"
+              size={24}
+              animate={true}
+            />
             <br />
             <span className="temp-high">15°</span>
             <span className="temp-low">11°</span>
           </li>
           <li className="forecast-weather">
-            Wed⛅
+            Wed{" "}
+            <ReactAnimatedWeather
+              icon="WIND"
+              color="gray"
+              size={24}
+              animate={true}
+            />
             <br />
             <span className="temp-high">14°</span>
             <span className="temp-low">11°</span>
@@ -81,15 +119,30 @@ export default function Weather() {
       <footer>
         <small>
           This project was coded by
-          <a href="" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/phenyo-rasekedi-9b833567/"
+            target="_blank"
+            rel="noreferrer"
+            alt="linkedIn Profile"
+          >
             Phenyo Esther Rasekedi
           </a>{" "}
           and is
-          <a href="" target="_blank">
+          <a
+            href="https://github.com/PhenyoEstherRasekedi/React-Weather-App"
+            target="_blank"
+            rel="noreferrer"
+            alt="Github Profile"
+          >
             open-sourced on Github
           </a>{" "}
           and
-          <a href="" target="_blank">
+          <a
+            href="https://app.netlify.com/teams/phenyoestherrasekedi/overview"
+            target="_blank"
+            rel="noreferrer"
+            alt="Netlify link"
+          >
             hosted on Netlify
           </a>
         </small>

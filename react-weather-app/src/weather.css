@@ -6,7 +6,7 @@
 }
 .weather .current-details {
   font-family: monospace;
-  color: rgba(39, 33, 66, 9.4);
+  color: white;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -49,6 +49,8 @@
 
 .weather .current-weather {
   margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .weather .current-temperature-emoji {
@@ -66,4 +68,9 @@
   font-size: 18px;
   position: relative;
   top: -20px;
+}
+
+.weather .forecast {
+  display: flex;
+  justify-content: space-between;
 }
