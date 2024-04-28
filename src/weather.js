@@ -138,7 +138,7 @@ export default function Weather() {
           </a>{" "}
           and
           <a
-            href="https://app.netlify.com/teams/phenyoestherrasekedi/overview"
+            href="https://react-tepoloapi.netlify.app/"
             target="_blank"
             rel="noreferrer"
             alt="Netlify link"
